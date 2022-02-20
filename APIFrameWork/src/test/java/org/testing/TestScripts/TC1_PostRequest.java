@@ -25,6 +25,7 @@ public class TC1_PostRequest {
 		bodyData=VariableReplacement.variableValue(bodyData, "id", RandomData.randomno().toString());
 		HttpMethod http = new HttpMethod(prObject);
 		Response res=http.PostRequest(bodyData, "QA_URI_API");
+		//Added a comment for git
 		http.PostRequest(bodyData, "QA_URI_API");
 		System.out.println("Status Code is "+res.statusCode());
 	    System.out.println("Data is "+res.asString());
